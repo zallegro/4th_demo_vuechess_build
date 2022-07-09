@@ -8,14 +8,12 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - npm install
+      - cd server && npm install && cd ..
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the dist folder
-      - npm run-script build
-  post_build:
-    commands:
-      - echo Build completed on `date`
-# Include only the files required for your application to run.
+      - npm run build
+  
 
     
