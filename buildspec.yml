@@ -18,10 +18,7 @@ phases:
     commands:
       - rm -rf server/public/static && cp dist/static -r server/public/static && rm server/views/client.html && cp dist/index.html server/views/client.html  
 artifacts:
-  secondary-artifacts:
-    server:
-      files:
-        - '**/*'
-      base-directory: server
+  files:
+    - server/**/*
 
     
