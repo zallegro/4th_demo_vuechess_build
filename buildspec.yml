@@ -16,7 +16,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - rm -rf server/public/static && cp dist/static -r server/public/static && rm server/views/client.html && cp dist/index.html server/views/client.html  
+     # - rm -rf server/public/static && cp dist/static -r server/public/static && rm server/views/client.html && cp dist/index.html server/views/client.html  
 artifacts:
   files:
     - '**/*'
